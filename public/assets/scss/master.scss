@@ -1,0 +1,52 @@
+/* --------------------------------------------------------
+version: 1.0
+last modified: 12.11.2017 by Dino Abdurahmanovic
+author: Dino Abdurahmanovic
+email: dino.abdurahmanovic@gmail.com
+website: http://wwww.dinmil.com
+----------------------------------------------------------*/
+
+/* --------------------------------------------------------
+STRUCTURE:
+
+-Variables
+-helpers
+-normalize
+-base
+-layout [ -header
+          -main [ -hero
+                  -section-1
+                  -section-2
+                  -section-3
+                  -section-4
+                  -section-5
+                ]
+          -footer
+        ]
+-modules
+-animations
+
+----------------------------------------------------------*/
+
+
+
+// Variables - color and font
+@import 'variables';
+
+// Helper functions and mixins
+@import "helpers";
+
+// Normalize styles for all browsers
+@import "normalize";
+
+// base styles for elements
+@import "base";
+
+// main layout
+@import "layout";
+
+// modules
+@import "modules";
+
+// animations
+@import "animations";

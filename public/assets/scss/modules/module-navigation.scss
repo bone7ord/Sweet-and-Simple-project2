@@ -1,0 +1,49 @@
+
+
+/* module navigation */
+.navigation {
+  > .link {
+    color: $white-transparent;
+    font-size: $header-nav-link-font-size;
+    line-height: $header-nav-link-line-height;
+    text-transform: uppercase;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+      @media (max-width: 991px) { margin-left: 0; margin-top: 25px; }
+    }
+
+    &.-white { color: $white; }
+    @media (max-width: 991px) { display: none;}
+  }
+
+  > .signup {
+    background-color: $signup-btn-bg;
+    border:           2px solid transparent;
+    border-radius:    50px;
+    padding:          10px 20px;
+    color: $white;
+    font-weight: bold;
+    &:hover { border: 2px solid $signup-btn-border; }
+  }
+
+  &.mobile {
+    @media (max-width: 991px) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: $mobile-bg;
+      right: -40vw;
+      width: 40vw;
+      > .link {
+        display: inline-block;
+        font-size: $header-nav-link-font-size + .5;
+      }
+    }
+
+    @media (max-width: 575px) {
+      @include flexbox(column, center, center);
+      right: -100vw;
+      width: 100vw; }
+  }
+}

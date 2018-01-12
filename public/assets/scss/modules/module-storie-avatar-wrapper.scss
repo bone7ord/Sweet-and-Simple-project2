@@ -1,0 +1,18 @@
+/**
+  * module storie avatar wrapper
+**/
+
+.storie-avatar-wrapper {
+  > .storie-avatar {
+    margin-bottom: 30px;
+
+    &:not(:first-child) { margin-left: 10px; }
+
+    &.inactive-avatar {
+      animation-name: inactiveAvatar;
+      animation-duration: .3s;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/**
+  * module swiper slide
+**/
+
+.swiper-slide {
+  padding: 0 31%;
+  @media (max-width: 1600px) { padding: 0 25%; }
+  @media (max-width: 1199px) { padding: 0 15%; }
+  @media (max-width: 575px) { padding: 0 12.5%; }
+
+  > .storie-quote {
+    color: $gray;
+    font-family: $quote;
+    font-size: $storie-quote-font-size;
+    font-weight: $storie-quote-font-weight;
+    line-height: $storie-quote-line-height;
+    text-align: center;
+    margin-bottom: 10px;
+    @media (max-width: 575px) { text-align: left; }
+  }
+
+  > .storie-author {
+    color: $gray-dark;
+    font-weight: $storie-author-font-weight;
+    text-align: center;
+    @media (max-width: 575px) { text-align: left; }
+  }
+}

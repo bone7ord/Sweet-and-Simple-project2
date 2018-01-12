@@ -1,0 +1,48 @@
+
+
+/* module card */
+.module-card {
+  width: 27%;
+  @media (max-width: 991px) { width: 65%; margin-top: 70px; }
+  @media (max-width: 575px) { width: 100%; }
+
+  > .card-icons {
+    @include flexbox(row, center, center);
+    height: 80px;
+    img:not(:first-child) {margin-left: 15px;}
+
+    > .card-number {
+      @include flexbox(row, center, center);
+      width: 70px;
+      height: 70px;
+      color: $number-counter;
+      font-size: 32px;
+      background-color: $number-counter-bg;
+      border-radius: 50px;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: '';
+        border: 2px solid $number-counter;
+        border-radius: 50px;
+        border-left: transparent;
+        transform: rotate(45deg);
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  > .card-title {
+    font-size: $card-title-font-size;
+    line-height: $card-title-line-height;
+    color: $gray-dark;
+    margin: 50px 0 30px;
+    @media (max-width: 991px) { margin: 25px 0 15px; }
+  }
+}

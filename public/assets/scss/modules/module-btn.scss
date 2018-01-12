@@ -1,0 +1,14 @@
+
+
+/* module button */
+.btn {
+  background-color: $orange;
+  border-radius: 50px;
+  color: $white;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 20px 47px;
+  text-transform: uppercase;
+  &:hover { box-shadow: 5px 8.66px 21px 0 rgba(255, 255, 255, 0.15);}
+}

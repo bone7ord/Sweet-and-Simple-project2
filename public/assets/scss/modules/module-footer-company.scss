@@ -1,0 +1,22 @@
+
+
+/* module footer company */
+.footer-company {
+  > .logo {
+    margin-bottom: 33px;
+    width: 105px;
+  }
+
+  > .description {
+    font-size: $footer-company-description-font-size;
+    line-height: $footer-company-description-line-height;
+    margin-bottom: 45px;
+  }
+
+  > .quote,
+  > .copyright {
+    font-size: $footer-company-copyright-font-size;
+    line-height: $footer-company-copyright-line-height;
+    @media (max-width: 1600px) { font-size: $footer-company-copyright-font-size*1.3 }
+  }
+}

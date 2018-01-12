@@ -1,0 +1,28 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "Sweet&Simple test project2",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "project2"
+  ],
+  "author": "Dino Abdurahmanovic",
+  "license": "ISC",
+  "browserslist": [
+    "safari 8",
+    "ie 10"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "browserslist": "^2.7.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "jquery": "^3.2.1"
+  }
+}

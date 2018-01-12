@@ -1,0 +1,63 @@
+
+
+/* module footer contact */
+.footer-contact {
+  > .title {
+    color: $gray-dark;
+    font-weight: $footer-title-font-weight;
+    line-height: 2;
+  }
+
+  > .description {
+    font-size: $footer-contact-description-font-size;
+  }
+
+  > .contact-details {
+    @include flexbox(row, flex-start, flex-start);
+    padding: 40px 0 20px;
+    position: relative;
+    width: 100%;
+    @media (max-width: 1600px) { padding: 35px 0 15px; }
+    @media (max-width: 1199px) { @include flexbox(column, flex-start, flex-start); }
+
+    &::after {
+      content: "";
+      border-bottom: 1px solid $line;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 90px;
+    }
+
+    > .phone {
+      font-size: $footer-contact-phone-font-size;
+      line-height: 1;
+    }
+
+    > .email {
+      color: $email;
+      font-size: $footer-contact-email-font-size;
+      line-height: 1;
+      margin-left: 45px;
+      @media (max-width: 1600px) { margin-left: auto;}
+      @media (max-width: 1199px) { margin-left: 0; margin-top: 15px; }
+
+    }
+  }
+
+  > .contact-social {
+    @include flexbox(row, flex-start, flex-start);
+    line-height: 1;
+    margin-top: 40px;
+    @media (max-width: 1600px) { margin-top: 35px; }
+
+    > .link:not(:first-child) {
+      margin-left: 14px;
+      @media (max-width: 1600px) { margin-left: 10px; }
+    }
+
+    > .link > img {
+      @media (max-width: 575px) { width: 70px; }
+    }
+  }
+}

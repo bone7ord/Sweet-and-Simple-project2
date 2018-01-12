@@ -1,0 +1,126 @@
+// COLORS
+// default font color
+$gray: #546E7A;
+$gray-light: #B0BEC5;
+$gray-dark: #37474F;
+$white: #ffffff;
+
+// navigation links
+$white-transparent: rgba(255, 255, 255, 0.702);
+
+// 'start free trial' button
+$orange: #FE763A;
+
+// signup button
+$signup-btn-bg: rgba(255, 255, 255, 0.2);
+$signup-btn-border: #fff;
+
+// animated number counter
+$number-counter: #66BB6A;
+$number-counter-bg: #ecf4ed;
+
+
+//email link in footer
+$email: rgb(66, 165, 245);
+
+// line in footer
+$line: #e4e8ec;
+
+// section 3 - white to gradient color
+// section 4 background color
+$white-gradient: #F3F5F7;
+
+/**
+  *
+  * FONT
+  *
+**/
+
+@font-face {
+  font-family: akkurat;
+  src: url(../font/Akkurat.ttf);
+}
+
+@font-face {
+  font-family: maisonNeue;
+  src: url(../font/MaisonNeue-Book.ttf);
+}
+
+//default font
+$font: 'akkurat', sans-serif;
+// default quote font
+$quote: 'maisonNeue', sans-serif;
+
+// default font size / line height / font weight
+$default-font-size: 16px;
+$default-line-height: 2;
+$default-font-weight: normal;
+
+// default font size for heading1
+$default-font-size-h1: 2.5em;
+$default-line-height-h1: 1.3;
+$default-font-weight-h1: lighter;
+
+// default font size for heading2
+$default-font-size-h2: 1.125em;
+$default-line-height-h2: 1.55;
+
+// default font size for heading3
+$default-font-size-h3: .875em;
+$default-line-height-h3: 1.2;
+
+// header navigation
+$header-nav-link-font-size: .875em;
+$header-nav-link-line-height: 1.2;
+
+// hero
+$hero-title-font-size: 3.75em;
+$hero-title-line-height: 1.2;
+
+//section1
+$card-title-font-size: 1.25em;
+$card-title-line-height: 1.3;
+
+// section4
+$storie-quote-font-size: 1.375em;
+$storie-quote-line-height: 1.9;
+$storie-quote-font-weight: lighter;
+$storie-author-font-weight: bold;
+
+// footer
+$footer-company-description-font-size: 1em;
+$footer-company-description-line-height: 1.875;
+
+$footer-company-copyright-font-size: .75em;
+$footer-company-copyright-line-height: 2;
+
+$footer-title-font-size: 1.125em;
+$footer-title-font-weight: bold;
+$footer-title-line-height: 2;
+
+$footer-link-font-size: 1.125em;
+// $footer-link-font-weight: bold;
+$footer-link-line-height: 2;
+
+$footer-contact-description-font-size: 1.125em;
+
+$footer-contact-email-font-size: 1.25em;
+$footer-contact-phone-font-size: 1.25em;
+
+
+// default background
+$default-bg: #fff;
+
+// mobile navigation background
+$mobile-bg: rgba(0, 0, 0, .9);
+
+// backgroung image
+$hero-bg: url('../img/01.png');
+$section3-bg: url('../img/14.png');
+$section3-bg-gradient: linear-gradient(0deg, $white-gradient 0%, $default-bg 100%);
+$section5-bg: url('../img/17.png');
+
+// CTA
+$cta-title-font-size: 2.5em;
+$cta-title-font-weight: lighter;
+$cta-title-line-height: 1.3;
